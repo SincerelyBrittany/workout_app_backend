@@ -26,6 +26,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rack-cors'
 gem 'devise-jwt', '~> 0.7.0'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'rspec-rails', '~> 4.0.1', groups: [:development, :test]
+gem 'fabrication', groups: [:development, :test]
+gem 'faker', groups: [:development, :test]
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
