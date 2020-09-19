@@ -14,6 +14,10 @@ class User < ApplicationRecord
          :registerable,
          jwt_revocation_strategy: JwtDenylist
 
+  validates :name, presence: true
+  validates :email, presence: true
+
+
   has_many :user_workouts, dependent: :destroy
   has_many :workouts, through: :user_workouts
 end
